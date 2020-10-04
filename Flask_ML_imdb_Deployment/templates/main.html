@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+</head>
+<body>
+    <h2 align="center">Welcome to Ml Testing</h2>
+
+    <div align="center">
+        <form action="/" method="post">
+
+        <textarea name="message" rows="10" cols="30">
+
+        </textarea>
+        <br/>
+        <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <h3>
+        {% if result is not defined %}
+         Your Review Result wil be displayed here !
+        {% else %}
+            {% if result == 1 %}
+                Positive Review :)
+            {% else %}
+                Negative Review :(
+            {% endif %}
+        {% endif %}
+
+    </h3>
+
+
+</body>
+</html>
